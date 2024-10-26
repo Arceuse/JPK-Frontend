@@ -1,45 +1,43 @@
 .inicio-container {
-    height: 100vh;
+    height: 2000px;
     display: flex;
     flex-direction: column;
 }
 
-.header {
+.inicio-container .header {
     position: relative;
-    height: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.navbar {
+.inicio-container .header .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 100px;
     background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con algo de transparencia */
 }
 
-.logo img {
-    height: 150px; /* Ajusta el tamaño del logo según sea necesario */
+.inicio-container .header .navbar .logo img {
+    height: 100px; /* Ajusta el tamaño del logo según sea necesario */
 }
 
-.opciones ul {
+.inicio-container .header .navbar .opciones ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-.opciones ul li {
-    margin: 0 15px;
+.inicio-container .header .navbar .opciones ul li {
+    margin-left: 75px;
     cursor: pointer;
 }
 
-.fondo {
+.inicio-container .header .fondo {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background: url('./../../../public/fondo-inicio.jpg') no-repeat center center/cover; 
@@ -50,6 +48,6 @@ h1 {
     text-align: center;
     margin-top: 20px;
     font-size: 100px;
-    color: #000000; /* Color de texto blanco */
-    z-index: 1; /* Asegúrate de que el texto esté por encima de la imagen de fondo */
+    color: #000000;
+    z-index: 1; 
 }
