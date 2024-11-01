@@ -158,11 +158,13 @@
     font-weight: 500;
 }
 
+
+
 .inicio-container .contacto{
     height: fit-content;
     background-color: rgb(41, 93, 113);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 100px;
+    padding: 75px 100px;
 }
 
 .inicio-container .contacto .titulo {
@@ -173,8 +175,64 @@
 .inicio-container .contacto .titulo h3{
     font-size: 35px;
     font-weight: 700;
+    margin-bottom: 50px;
 }
 
-.inicio-container .contacto {
-    
+.inicio-container .contacto .formulario{
+    width: 900px;
+    margin: auto;
+}
+
+.inicio-container .contacto .formulario .input {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    margin-bottom: 25px; /* Espacio entre los campos */
+}
+
+.inicio-container .contacto .formulario .input label {
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.inicio-container .contacto .formulario .input input {
+    padding: 8px; /* Espaciado interno del input */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo */
+    height: fit-content;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+.inicio-container .contacto .formulario .input textarea {
+    padding: 8px; /* Espaciado interno del textarea */
+    border: 1px solid #ccc; /* Borde del textarea */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100%; /* Ancho completo */
+    height: 300px; /* Altura automática */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.inicio-container .contacto .formulario .button {
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: 25px; /* Espacio superior */
+}
+
+.inicio-container .contacto .formulario button {
+    background-color: rgb(9, 29, 156); /* Color de fondo azul */
+    color: white; /* Color del texto */
+    height: 40px;
+    width: 100%;
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 20px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.inicio-container .contacto .formulario button:hover {
+    background-color: #0063cc; /* Color de fondo azul más oscuro al pasar el mouse */
 }
