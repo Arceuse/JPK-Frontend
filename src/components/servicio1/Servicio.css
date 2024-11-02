@@ -1,0 +1,80 @@
+.servicio_traduccion {
+    height: 100%;
+    width: 100%;
+    min-width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicio_traduccion .header {
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(24, 36, 255, 0.34);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+
+}
+
+.servicio_traduccion .header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.servicio_traduccion .header .navbar .opciones ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.servicio_traduccion .header .navbar .opciones ul li {
+    margin-left: 75px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.servicio_traduccion .header .info {
+    width: 900px;
+    height: 100%;
+    margin-left: 15vh;
+    margin-top: 50px;
+    margin-bottom: 5vh;
+}
+
+.servicio_traduccion .header .info h1 {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 75px;
+    z-index: 1;
+}
+
+.servicio_traduccion .header .info p {
+    font-size: 35px;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.servicio_traduccion .header .info button {
+    border-radius: 50px;
+    padding: 10px 40px;
+    margin: 50px auto;
+    background-color: rgb(13, 13, 157);
+    color: aliceblue;
+
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.servicio_traduccion .header .fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('./../../../public/fondo-inicio.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
